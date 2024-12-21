@@ -1,0 +1,38 @@
+/* header hero  */
+.header-hero-wrapper {
+  background-image: url("../assets//images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.header-hero-wrapper > * {
+  color: white;
+}
+/* header */
+header {
+  position: fixed;
+  display: flex;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo {
+  width: 64px;
+}
+
+/* hero */
+.hero-container {
+  min-height: 80vh;
+}
+
+/*  */
+
+/* main */
+main {
+  min-height: 120vh;
+  background-color: gray;
+}
