@@ -229,12 +229,12 @@ main > section {
   background-color: black;
   color: white;
   transition: background-color 0.3s ease;
+  margin-top: 1rem;
 }
 
 .submit-btn:hover {
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .wrapper-contact {
     grid-template-columns: 1fr;
@@ -243,4 +243,27 @@ main > section {
   .container-left-contact {
     text-align: center;
   }
+}
+
+/* footer */
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item-social-media > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.item-social-media:hover > a {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.item-social-media > a > i {
+  font-size: 24px;
 }
