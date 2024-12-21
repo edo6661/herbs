@@ -5,8 +5,9 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  position: relative;
 }
-.header-hero-wrapper > * {
+.header-hero-wrapper > * > * {
   color: white;
 }
 /* header */
@@ -26,7 +27,14 @@ header {
 
 /* hero */
 .hero-container {
-  min-height: 80vh;
+  min-height: 100vh;
+}
+/* hero action */
+.hero-action-container {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*  */
