@@ -118,7 +118,8 @@
       </section>
       <section id="product" class="wrapper-product container">
         <div class="container-left-product flex-col gap-2">
-          <h2>Our Products</h2>
+          <span class="font-semibold">Our Products</span>
+          <h2>Let's Connect and Explore Business Opportunities Together</h2>
         </div>
         <div class="container-right-product flex-col gap-2">
           <p>
@@ -248,9 +249,90 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-        />
+        ></iframe>
       </section>
-      <section id="contact" class="wrapper-contact container"></section>
+      <section id="contact" class="wrapper-contact container">
+        <div class="container-left-contact flex-col gap-2">
+          <span>Contact Us</span>
+          <h2>Let's Connect and Explore Business Opportunities Together</h2>
+        </div>
+        <div class="container-right-contact flex-col gap-4">
+          <div class="contact-info flex-col gap-2">
+            <div class="contact-item">
+              <h3>Office Address</h3>
+              <p>Jl. Example Street No. 123</p>
+              <p>Surabaya, East Java</p>
+              <p>Indonesia 60XXX</p>
+            </div>
+
+            <div class="contact-item">
+              <h3>Contact Details</h3>
+              <p>Phone: +62 XXX-XXX-XXX</p>
+              <p>Email: info@ranserendipity.com</p>
+              <p>Working Hours: Monday - Friday, 9:00 - 17:00 WIB</p>
+            </div>
+          </div>
+
+          <form
+            action="https://formsubmit.co/muhammadridho5654@gmail.com"
+            method="POST"
+            class="contact-form"
+          >
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="Subject"
+                placeholder="Enter subject"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="Message"
+                rows="4"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+            </div>
+
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/src/index.html"
+            />
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_template" value="table" />
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
