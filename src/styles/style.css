@@ -28,6 +28,11 @@ header {
 /* hero */
 .hero-container {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 /* hero action */
 .hero-action-container {
@@ -41,6 +46,16 @@ header {
 
 /* main */
 main {
-  min-height: 120vh;
-  background-color: gray;
+}
+
+main > section {
+  min-height: 100vh;
+  padding-block: 2rem;
+}
+
+/* about */
+.wrapper-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(0, 0, 0, 0.1);
 }
