@@ -134,12 +134,10 @@
 }
 /* display */
 .active {
-  opacity: 1;
-  z-index: 1;
+  visibility: visible;
 }
 .hidden {
-  opacity: 0;
-  z-index: -1;
+  visibility: hidden;
 }
 
 /* flex */

@@ -3,23 +3,14 @@ export function openModal(item) {
   const modalImage = modal.querySelector("img");
   const modalTitle = modal.querySelector("h2");
   const modalDescription = modal.querySelector("p");
-  const modalDetails = modal.querySelector("span");
 
-  const imgSrc = item.querySelector("img").src;
+  const imgSrc = item.dataset.image;
   const title = item.dataset.title;
   const description = item.dataset.description;
-  const details = item.dataset.detail || "";
 
   modalImage.src = imgSrc;
   modalTitle.textContent = title;
   modalDescription.textContent = description;
-
-  if (details) {
-    modalDetails.textContent = `Detail: ${details}`;
-    modalDetails.style.display = "block";
-  } else {
-    modalDetails.style.display = "none";
-  }
 
   modal.classList.remove("hidden");
   modal.classList.add("active");
