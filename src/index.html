@@ -57,7 +57,7 @@
         /> -->
         <a href="#hero">Logo</a>
         <nav>
-          <ul class="flex-align-center gap-12">
+          <ul class="container-nav">
             <li><a href="#about">About</a></li>
             <li><a href="#product">Product</a></li>
             <li><a href="#advantage">Advantage</a></li>
@@ -66,12 +66,8 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <p class="text-right">WA : +6289523104018</p>
       </header>
-      <section
-        id="hero"
-        class="hero-container container flex-center flex-col gap-1"
-      >
+      <section id="hero" class="hero-container">
         <span>Spices Exporter from Indonesia</span>
         <h1>RAN SERENDIPITY SPICES</h1>
       </section>
@@ -88,8 +84,10 @@
     <main>
       <section id="about" class="wrapper-about container">
         <div class="container-left-about flex-col gap-2">
-          <span>About Company </span>
-          <h2>We are the leading exporter of spices in Indonesia</h2>
+          <span class="font-semibold">About Company </span>
+          <h2 class="title">
+            We are the leading exporter of spices in Indonesia
+          </h2>
         </div>
         <div class="container-right-about flex-col gap-2">
           <p>
@@ -119,7 +117,9 @@
       <section id="product" class="wrapper-product container">
         <div class="container-left-product flex-col gap-2">
           <span class="font-semibold">Our Products</span>
-          <h2>Let's Connect and Explore Business Opportunities Together</h2>
+          <h2 class="title">
+            Let's Connect and Explore Business Opportunities Together
+          </h2>
         </div>
         <div class="container-right-product flex-col gap-2">
           <p>
@@ -161,7 +161,7 @@
       </section>
       <section id="advantage" class="wrapper-advantage container">
         <div class="container-left-advantage flex-col gap-4">
-          <h2>OUR ADVANTAGE</h2>
+          <h2 class="title">OUR ADVANTAGE</h2>
           <p>
             <span class="font-semibold">INTERGRITY: </span>
             Being honest, fair and trusted business partner, Integrity is one of
@@ -185,7 +185,7 @@
       </section>
       <section id="team" class="wrapper-team container space-y-12">
         <div class="container-top-team gap-2">
-          <h2>Our Team</h2>
+          <h2 class="title">Our Team</h2>
           <p>
             We have a team of highly skilled, committed and motivated
             professionals specializing in respective core fields.
@@ -195,11 +195,11 @@
           <div class="team-item gap-2">
             <img src="assets/images/chill.png" alt="Team" />
             <div class="team-item-content">
-              <div class="team-detail">
-                <h3>RANA AISYA</h3>
+              <div class="team-info">
+                <h3 class="sub-title">RANA AISYA</h3>
                 <p>FOUNDER &amp; CHIEF EXECUTIVE OFFICER (CEO)</p>
               </div>
-              <div class="team-social-media flex-center gap-2">
+              <div class="container-team-social-media flex-center gap-2">
                 <a href="#">
                   <i class="fa-brands fa-facebook"></i>
                 </a>
@@ -218,11 +218,11 @@
           <div class="team-item gap-2">
             <img src="assets/images/chill.png" alt="Team" />
             <div class="team-item-content">
-              <div class="team-detail">
-                <h3>RANA AISYA</h3>
+              <div class="team-info">
+                <h3 class="sub-title">RANA AISYA</h3>
                 <p>FOUNDER &amp; CHIEF EXECUTIVE OFFICER (CEO)</p>
               </div>
-              <div class="team-social-media flex-center gap-2">
+              <div class="container-team-social-media flex-center gap-2">
                 <a href="#">
                   <i class="fa-brands fa-facebook"></i>
                 </a>
@@ -334,31 +334,31 @@
         </div>
       </section>
       <footer id="footer" class="container py-6">
-        <div class="container-logo flex-center flex-col gap-2">
+        <div class="container-logo flex-center inner-footer">
           <img src="assets/images/chill.png" alt="Logo" width="120" />
           <span class="font-semibold text-center">
             Feel free to contact us anytime
           </span>
         </div>
-        <div class="container-contact-us flex-col gap-2">
-          <h3>Contact Us</h3>
+        <div class="container-contact-us inner-footer">
+          <h3 class="sub-title">Contact Us</h3>
           <p>
             Jl. Panglima Sudirman No.10-18, Embong Kaliasin, Kec. Genteng,
             Surabaya, Jawa Timur 60271
           </p>
           <div class="inner-contact-us">
-            <div class="content-contact-us flex-align-center gap-2">
+            <div>
               <i class="fa-solid fa-envelope"></i>
               <p>ranserendipityspices@gmail.com</p>
             </div>
-            <div class="content-contact-us flex-align-center gap-2">
+            <div>
               <i class="fa-solid fa-phone"></i>
               <p>+62895-2310-4018</p>
             </div>
           </div>
         </div>
-        <div class="container-social-media">
-          <h3>Follow Us</h3>
+        <div class="container-social-media inner-footer">
+          <h3 class="sub-title">Follow Us</h3>
           <div class="inner-social-media flex-align-center gap-2">
             <div class="item-social-media">
               <a href="#">
