@@ -1,3 +1,15 @@
+/* overflow */
+.overflow-hidden {
+  overflow: hidden;
+}
+/* display */
+.active {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
 /* flex */
 .flex-align-center {
   display: flex;
