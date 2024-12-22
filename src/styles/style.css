@@ -1,3 +1,35 @@
+:root {
+  /* Warna Utama */
+  --coffee-dark: rgb(59, 29, 13); /* Coklat gelap seperti biji kopi panggang */
+  --coffee-medium: rgb(97, 54, 29); /* Coklat medium seperti espresso */
+  --coffee-light: rgb(175, 136, 104); /* Coklat muda seperti latte */
+  --coffee-cream: rgb(230, 214, 192); /* Warna krem seperti foam */
+  --coffee-white: rgb(252, 248, 242); /* Putih hangat untuk background */
+  --coffee-golden: rgb(193, 140, 86); /* Coklat keemasan untuk aksen */
+
+  /* Penggunaan untuk Teks */
+  --text-primary: var(--coffee-dark);
+  --text-secondary: var(--coffee-medium);
+  --text-light: var(--coffee-light);
+  --text-white: var(--coffee-white);
+  --text-golden: var(--coffee-golden);
+
+  /* Penggunaan untuk Background */
+  --bg-primary: var(--coffee-white);
+  --bg-secondary: var(--coffee-cream);
+  --bg-light: var(--coffee-light);
+  --bg-white: var(--coffee-white);
+  --bg-golden: var(--coffee-golden);
+
+  /* border */
+  --border-primary: var(--coffee-golden);
+
+  /* Penggunaan untuk Komponen */
+  --button-primary: var(--coffee-golden);
+  --button-hover: var(--coffee-medium);
+  --nav-background: var(--coffee-dark);
+  --card-background: var(--coffee-cream);
+}
 /* header hero  */
 .header-hero-wrapper {
   min-height: 100vh;
@@ -24,7 +56,7 @@
   top: 0;
 }
 .header-hero-wrapper > * > * {
-  color: white;
+  color: var(--text-white);
 }
 
 /* header */
@@ -44,7 +76,7 @@ header {
   display: none;
 }
 .toggle-nav-btn > i {
-  color: white;
+  color: var(--text-white);
 }
 
 @media screen and (min-width: 640px) {
@@ -91,6 +123,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  gap: 1rem;
 }
 
 /* hero action */
@@ -125,10 +159,17 @@ main > section {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+
 .wrapper-about,
 .wrapper-advantage,
-.wrapper-map {
-  background-color: rgba(0, 0, 0, 0.1);
+.wrapper-map,
+.wrapper-contact {
+  background-color: var(--bg-primary);
+}
+.wrapper-product,
+.wrapper-team,
+footer {
+  background-color: var(--bg-secondary);
 }
 @media screen and (max-width: 768px) {
   .wrapper-about,
@@ -189,7 +230,7 @@ main > section {
   transform: scale(1);
 }
 .bottom-about-item > img {
-  object-fit: cover;
+  object-fit: contain;
   transform: scale(0.9);
   transition: transform 0.3s ease, border-radius 0.3s ease;
   border-radius: 1rem;
@@ -200,13 +241,15 @@ main > section {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  color: white;
+  color: var(--text-white);
   padding: 0.5rem;
   width: 100%;
   text-align: center;
   border-radius: 0 0 0.5rem 0.5rem;
   transition: background-color 0.3s ease;
   transform: scale(0.9);
+  font-weight: 600;
+  font-size: 16px;
 }
 .container-vision-mission {
   display: flex;
@@ -253,7 +296,7 @@ main > section {
   position: relative;
 }
 .team-item:hover > img {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 .team-item:hover > .team-item-content {
   bottom: 24px;
@@ -309,20 +352,6 @@ main > section {
   gap: 2rem;
 }
 
-.container-left-contact span {
-  font-weight: 600;
-}
-
-.container-left-contact h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.contact-item h3 {
-  font-weight: 600;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -342,9 +371,13 @@ main > section {
 .contact-form input,
 .contact-form textarea {
   padding: 0.75rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--bg-primary);
   border-radius: 0.25rem;
-  font-size: 1rem;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--border-primary);
 }
 
 .contact-form textarea {
@@ -357,13 +390,15 @@ main > section {
   border-radius: 0.25rem;
   font-weight: 600;
   cursor: pointer;
-  background-color: black;
-  color: white;
-  transition: background-color 0.3s ease;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
   margin-top: 1rem;
 }
 
 .submit-btn:hover {
+  background-color: var(--bg-light);
+  color: var(--text-white);
 }
 
 @media screen and (max-width: 768px) {
@@ -434,10 +469,14 @@ footer {
   height: 48px;
   border-radius: 50%;
   transition: background-color 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-primary);
+  background-color: var(--bg-primary);
 }
 .item-social-media:hover > a {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-golden);
+}
+.item-social-media:hover > a > i {
+  color: var(--text-white);
 }
 .item-social-media > a > i {
   font-size: 24px;
@@ -457,7 +496,7 @@ footer {
 }
 
 .inner-modal-product {
-  background-color: white;
+  background-color: var(--bg-secondary);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -468,6 +507,26 @@ footer {
   overflow-y: auto;
   max-height: 80vh;
   width: 80%;
+}
+.inner-modal-product::-webkit-scrollbar {
+  width: 12px;
+}
+.inner-modal-product::-webkit-scrollbar-thumb {
+  background-color: var(--coffee-dark);
+  border-radius: 0.5rem;
+}
+.inner-modal-product::-webkit-scrollbar-track {
+  background-color: var(--coffee-light);
+  border-radius: 0.5rem;
+}
+.inner-modal-product::-webkit-scrollbar-thumb:hover {
+  background-color: var(--coffee-medium);
+}
+.modal-product-info > h2 {
+  color: var(--text-primary);
+}
+.modal-product-info > p {
+  color: var(--text-secondary);
 }
 .container-image-product {
   display: flex;
@@ -491,10 +550,11 @@ footer {
   border-radius: 0.3rem;
 }
 .inner-modal-product > button:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.15);
   border-radius: 0.5rem;
 }
 
 .inner-modal-product > button > i {
   font-size: 18px;
+  color: var(--text-secondary);
 }

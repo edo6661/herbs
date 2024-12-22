@@ -1,3 +1,23 @@
+/* color */
+
+.text-primary {
+  color: var(--text-primary);
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
+.text-light {
+  color: var(--text-light);
+}
+.text-white {
+  color: var(--text-white);
+}
+.text-cream {
+  color: var(--text-cream);
+}
+.text-golden {
+  color: var(--text-golden);
+}
 /* font */
 
 .headline {
@@ -6,10 +26,14 @@
 
 .title {
   font-size: 2.5rem;
+  color: var(--text-primary);
+  font-weight: 700;
 }
 
 .sub-title {
-  font-size: 1.9rem;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  font-weight: 600;
 }
 
 .body {
@@ -28,7 +52,7 @@
     font-size: 2.125rem;
   }
   .sub-title {
-    font-size: 1.7rem;
+    font-size: 1.125rem;
   }
   .body {
     font-size: 0.9375rem;
@@ -46,7 +70,7 @@
     font-size: 2rem;
   }
   .sub-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .body {
     font-size: 0.875rem;
@@ -64,7 +88,7 @@
     font-size: 1.75rem;
   }
   .sub-title {
-    font-size: 1.4rem;
+    font-size: 0.9375rem;
   }
   .body {
     font-size: 0.8125rem;
@@ -79,7 +103,7 @@
     font-size: 2.5rem;
   }
   .title {
-    font-size: 1.3rem;
+    font-size: 1.625rem;
   }
   .sub-title {
     font-size: 0.875rem;
@@ -97,10 +121,10 @@
     font-size: 2.25rem;
   }
   .title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .sub-title {
-    font-size: 1.15rem;
+    font-size: 0.75rem;
   }
   .body {
     font-size: 0.6875rem;
@@ -118,7 +142,7 @@
     font-size: 1.25rem;
   }
   .sub-title {
-    font-size: 1.1rem;
+    font-size: 0.6875rem;
   }
   .body {
     font-size: 0.625rem;
