@@ -28,7 +28,7 @@ header {
   display: none;
 }
 .toggle-nav-btn > i {
-  color: red;
+  color: white;
 }
 
 @media screen and (min-width: 640px) {
@@ -85,10 +85,9 @@ header {
   transform: translateX(-50%);
 }
 
-/*  */
-
 /* main */
 
+/* TODO */
 main > section {
   /* min-height: 100vh; */
   padding-block: 2rem;
@@ -161,7 +160,7 @@ main > section {
 .bottom-about-item {
   position: relative;
   height: fit-content;
-  padding-bottom: 2rem;
+  cursor: pointer;
 }
 .bottom-about-item:hover > img {
   transform: scale(1);
