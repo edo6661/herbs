@@ -1,13 +1,145 @@
+/* font */
+
+.headline {
+  font-size: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.sub-title {
+  font-size: 1.25rem;
+}
+
+.body {
+  font-size: 1rem;
+}
+
+.description {
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 1536px) {
+  .headline {
+    font-size: 3.5rem;
+  }
+  .title {
+    font-size: 2.125rem;
+  }
+  .sub-title {
+    font-size: 1.125rem;
+  }
+  .body {
+    font-size: 0.9375rem;
+  }
+  .description {
+    font-size: 0.8125rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .headline {
+    font-size: 3rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .sub-title {
+    font-size: 1rem;
+  }
+  .body {
+    font-size: 0.875rem;
+  }
+  .description {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .headline {
+    font-size: 2.75rem;
+  }
+  .title {
+    font-size: 1.75rem;
+  }
+  .sub-title {
+    font-size: 0.9375rem;
+  }
+  .body {
+    font-size: 0.8125rem;
+  }
+  .description {
+    font-size: 0.6875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headline {
+    font-size: 2.5rem;
+  }
+  .title {
+    font-size: 1.625rem;
+  }
+  .sub-title {
+    font-size: 0.875rem;
+  }
+  .body {
+    font-size: 0.75rem;
+  }
+  .description {
+    font-size: 0.625rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .headline {
+    font-size: 2.25rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .sub-title {
+    font-size: 0.75rem;
+  }
+  .body {
+    font-size: 0.6875rem;
+  }
+  .description {
+    font-size: 0.5625rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .headline {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 1.25rem;
+  }
+  .sub-title {
+    font-size: 0.6875rem;
+  }
+  .body {
+    font-size: 0.625rem;
+  }
+  .description {
+    font-size: 0.5rem;
+  }
+}
+
 /* overflow */
 .overflow-hidden {
   overflow: hidden;
 }
 /* display */
 .active {
-  display: block;
+  opacity: 1;
+  z-index: 1;
 }
 .hidden {
-  display: none;
+  opacity: 0;
+  z-index: -1;
 }
 
 /* flex */

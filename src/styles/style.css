@@ -1,11 +1,27 @@
 /* header hero  */
 .header-hero-wrapper {
-  background-image: url("../assets//images/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
+}
+.header-hero-wrapper > img {
+  min-height: 100vh;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+.header-hero-wrapper > .first-image-hero {
+  top: 0;
+  left: 0;
+}
+.header-hero-wrapper > .second-image-hero {
+  right: -100%;
+  top: 0;
 }
 .header-hero-wrapper > * > * {
   color: white;
@@ -98,6 +114,10 @@ main > section {
   }
 }
 /* wrapper in main */
+.container-right-advantage {
+  display: flex;
+  justify-content: center;
+}
 .wrapper-about,
 .wrapper-product,
 .wrapper-advantage {
@@ -120,9 +140,6 @@ main > section {
 }
 
 /* about */
-.container-left-about {
-  text-align: center;
-}
 
 .inner-about {
   display: flex;
@@ -169,12 +186,13 @@ main > section {
 }
 .bottom-about-item:hover > p {
   background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(1);
 }
 .bottom-about-item > img {
   object-fit: cover;
   transform: scale(0.9);
   transition: transform 0.3s ease, border-radius 0.3s ease;
-
+  border-radius: 1rem;
   aspect-ratio: 1/1;
 }
 .bottom-about-item > p {
@@ -188,6 +206,7 @@ main > section {
   text-align: center;
   border-radius: 0 0 0.5rem 0.5rem;
   transition: background-color 0.3s ease;
+  transform: scale(0.9);
 }
 
 /* team */
@@ -430,6 +449,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 3;
   padding: 1rem 2rem;
+  transition: opacity 0.3s ease;
 }
 
 .inner-modal-product {
@@ -440,7 +460,7 @@ footer {
   transform: translate(-50%, -50%);
   border-radius: 0.5rem;
   padding: 1rem;
-  padding-top: 2.5rem;
+  padding-top: 5rem;
   overflow-y: auto;
   max-height: 80vh;
   width: 80%;
@@ -457,17 +477,18 @@ footer {
 }
 .inner-modal-product > button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 24px;
+  right: 24px;
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
   cursor: pointer;
   padding: 1rem;
   transition: background-color 0.3s ease, border-radius 0.3s ease;
+  border-radius: 0.3rem;
 }
 .inner-modal-product > button:hover {
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 0 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .inner-modal-product > button > i {
