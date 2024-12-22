@@ -440,6 +440,7 @@ footer {
   transform: translate(-50%, -50%);
   border-radius: 0.5rem;
   padding: 1rem;
+  padding-top: 2.5rem;
   overflow-y: auto;
   max-height: 80vh;
 }
