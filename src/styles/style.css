@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  z-index: 2;
 }
 .container-nav {
   display: flex;
@@ -55,7 +55,7 @@ header {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
-  z-index: 1000;
+  z-index: 2;
 }
 .container-mobile-nav > ul {
   display: flex;
@@ -157,6 +157,7 @@ main > section {
     grid-template-columns: 1fr;
   }
 }
+
 .bottom-about-item {
   position: relative;
   height: fit-content;
@@ -164,16 +165,17 @@ main > section {
 }
 .bottom-about-item:hover > img {
   transform: scale(1);
+  border-radius: 0.5rem;
 }
 .bottom-about-item:hover > p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .bottom-about-item > img {
   object-fit: cover;
-  border-radius: 0.5rem;
   transform: scale(0.9);
-  transition: transform 0.3s ease;
-  border-radius: 0.5rem 0.5rem 0 0;
+  transition: transform 0.3s ease, border-radius 0.3s ease;
+
+  aspect-ratio: 1/1;
 }
 .bottom-about-item > p {
   position: absolute;
@@ -415,4 +417,46 @@ footer {
 }
 .item-social-media > a > i {
   font-size: 24px;
+}
+
+/* modal */
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  padding: 1rem 2rem;
+}
+
+.inner-modal-product {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+.inner-modal-product > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+.inner-modal-product > button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 0 0.5rem;
+}
+
+.inner-modal-product > button > i {
+  font-size: 18px;
 }

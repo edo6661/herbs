@@ -48,6 +48,19 @@
     <!--  -->
   </head>
   <body class="poppins-regular">
+    <!-- modal -->
+    <div class="modal-container hidden">
+      <div class="inner-modal-product space-y-6">
+        <button class="close-modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img src="assets/images/chill.png" alt="Product" />
+        <div class="modal-product-info">
+          <h2>Title Product</h2>
+          <p>Description</p>
+        </div>
+      </div>
+    </div>
     <!-- header and hero -->
     <div class="header-hero-wrapper">
       <header class="container py-6">
@@ -99,6 +112,7 @@
         </button>
       </div>
     </div>
+
     <!-- main -->
     <main>
       <section id="about" class="wrapper-about container">
@@ -133,6 +147,7 @@
           </p>
         </div>
       </section>
+
       <section id="product" class="wrapper-product container">
         <div class="container-left-product inner-product">
           <span class="font-semibold">Our Products</span>
@@ -152,14 +167,23 @@
           </a>
         </div>
         <div class="container-bottom-about">
-          <div class="bottom-about-item">
+          <div
+            class="bottom-about-item"
+            data-title="Chillin"
+            data-description="Description for Chillin"
+          >
             <img src="assets/images/chill.png" alt="Item" />
             <p>Chillin</p>
           </div>
-          <div class="bottom-about-item">
-            <img src="assets/images/chill.png" alt="Item" />
-            <p>Chillin</p>
+          <div
+            class="bottom-about-item"
+            data-title="Relax"
+            data-description="Description for Relax"
+          >
+            <img src="assets/images/hero.jpg" alt="Item" />
+            <p>Relax</p>
           </div>
+
           <div class="bottom-about-item">
             <img src="assets/images/chill.png" alt="Item" />
             <p>Chillin</p>
