@@ -7,7 +7,6 @@ function handleAnchorNav() {
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
-      console.log("test");
       const targetId = this.getAttribute("href").substring(1);
       const targetElement = document.getElementById(targetId);
 
@@ -22,15 +21,55 @@ function handleAnchorNav() {
     });
   });
 }
+
 function toggleMobileNav() {
   const mobileNavContainer = document.querySelector(".container-mobile-nav");
-  const heroActionsContainer = document.querySelector(".hero-action-container");
   const body = document.querySelector("body");
 
   mobileNavContainer.classList.toggle("active");
   mobileNavContainer.classList.toggle("hidden");
-  heroActionsContainer.classList.toggle("hidden");
   body.classList.toggle("overflow-hidden");
+}
+
+function handleActiveNav() {
+  const sections = document.querySelectorAll(
+    "#about, #product, #advantage, #team, #map, #contact"
+  );
+  const navLinks = document.querySelectorAll(
+    ".container-nav a[href^='#'], .container-mobile-nav a[href^='#']"
+  );
+  const offset = 92;
+  const threshold = 0.5;
+
+  function updateActiveLink() {
+    let activeSection = null;
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      const sectionTop = rect.top - offset;
+      const sectionHeight = rect.height;
+
+      if (
+        sectionTop <= window.innerHeight * threshold &&
+        sectionTop + sectionHeight >= window.innerHeight * threshold
+      ) {
+        activeSection = section;
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (
+        activeSection &&
+        link.getAttribute("href").substring(1) === activeSection.id
+      ) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", updateActiveLink);
+  updateActiveLink();
 }
 
 export function initNav() {
@@ -50,5 +89,7 @@ export function initNav() {
       toggleMobileNav();
     }
   });
+
   handleAnchorNav();
+  handleActiveNav();
 }
