@@ -1,11 +1,47 @@
 :root {
-  /* Warna Utama */
-  --coffee-dark: rgb(59, 29, 13); /* Coklat gelap seperti biji kopi panggang */
-  --coffee-medium: rgb(97, 54, 29); /* Coklat medium seperti espresso */
-  --coffee-light: rgb(175, 136, 104); /* Coklat muda seperti latte */
-  --coffee-cream: rgb(230, 214, 192); /* Warna krem seperti foam */
-  --coffee-white: rgb(252, 248, 242); /* Putih hangat untuk background */
-  --coffee-golden: rgb(193, 140, 86); /* Coklat keemasan untuk aksen */
+  --coffee-dark: rgba(
+    59,
+    29,
+    13,
+    1
+  ); /* Coklat gelap seperti biji kopi panggang */
+  --coffee-medium: rgba(97, 54, 29, 1); /* Coklat medium seperti espresso */
+  --coffee-light: rgba(175, 136, 104, 1); /* Coklat muda seperti latte */
+  --coffee-cream: rgba(230, 214, 192, 1); /* Warna krem seperti foam */
+  --coffee-white: rgba(252, 248, 242, 1); /* Putih hangat untuk background */
+  --coffee-golden: rgba(193, 140, 86, 1); /* Coklat keemasan untuk aksen */
+
+  --coffee-dark-alpha: rgba(
+    59,
+    29,
+    13,
+    0.5
+  ); /* Coklat gelap seperti biji kopi panggang */
+  --coffee-medium-alpha: rgba(
+    97,
+    54,
+    29,
+    0.5
+  ); /* Coklat medium seperti espresso */
+  --coffee-light-alpha: rgba(
+    175,
+    136,
+    104,
+    0.5
+  ); /* Coklat muda seperti latte */
+  --coffee-cream-alpha: rgba(230, 214, 192, 0.5); /* Warna krem seperti foam */
+  --coffee-white-alpha: rgba(
+    252,
+    248,
+    242,
+    0.5
+  ); /* Putih hangat untuk background */
+  --coffee-golden-alpha: rgba(
+    193,
+    140,
+    86,
+    0.5
+  ); /* Coklat keemasan untuk aksen */
 
   /* Penggunaan untuk Teks */
   --text-primary: var(--coffee-dark);
@@ -229,12 +265,12 @@ main > section {
   border-radius: 0.5rem;
 }
 .bottom-about-item:hover > p {
-  background-color: rgba(0, 0, 0, 0.5);
   transform: scale(1);
+  background-color: var(--coffee-medium-alpha);
 }
 .bottom-about-item > img {
   object-fit: contain;
-  transform: scale(0.9);
+  transform: scale(0.95);
   transition: transform 0.3s ease, border-radius 0.3s ease;
   border-radius: 1rem;
   aspect-ratio: 1/1;
@@ -243,14 +279,15 @@ main > section {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--coffee-light-alpha);
+
   color: var(--text-white);
   padding: 0.5rem;
   width: 100%;
   text-align: center;
   border-radius: 0 0 0.5rem 0.5rem;
   transition: background-color 0.3s ease;
-  transform: scale(0.9);
+  transform: scale(0.95);
   font-weight: 600;
   font-size: 16px;
 }
@@ -299,7 +336,7 @@ main > section {
   position: relative;
 }
 .team-item:hover > img {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--coffee-dark-alpha);
 }
 .team-item:hover > .team-item-content {
   bottom: 24px;
@@ -308,7 +345,7 @@ main > section {
   object-fit: cover;
   border-radius: 0.5rem;
   transition: background-color 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--coffee-light-alpha);
 }
 
 .team-item-content {
@@ -499,7 +536,7 @@ footer h3 {
   width: 100%;
   height: 100vh;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--coffee-medium-alpha);
   z-index: 3;
   padding: 1rem 2rem;
 }
