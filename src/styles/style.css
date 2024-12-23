@@ -68,12 +68,12 @@
 }
 /* header and hero  */
 .header-hero-wrapper {
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   overflow-x: hidden;
 }
 .header-hero-wrapper > img {
-  min-height: 100vh;
+  min-height: 90vh;
   position: absolute;
 
   width: 100%;
@@ -169,7 +169,7 @@ footer {
 
 /* hero */
 .hero-container {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,11 +231,18 @@ main > section {
 }
 
 /* about */
+.container-left-about > img {
+  margin-inline: auto;
+  border-radius: 0.5rem;
+}
 
 .inner-about {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.inner-about > img {
+  width: 412px;
 }
 /* product */
 .inner-product {
@@ -359,7 +366,8 @@ main > section {
   bottom: 24px;
 }
 .team-item > img {
-  object-fit: cover;
+  object-fit: contain;
+  height: 500px;
   border-radius: 0.5rem;
   transition: background-color 0.3s ease;
   background-color: var(--coffee-light-alpha);
