@@ -19,136 +19,135 @@
   color: var(--text-golden);
 }
 /* font */
-
 .headline {
-  font-size: 4rem;
+  font-size: calc(4rem + 2px);
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: calc(2.5rem + 2px);
   color: var(--text-primary);
   font-weight: 700;
 }
 
 .sub-title {
-  font-size: 1.25rem;
+  font-size: calc(1.25rem + 2px);
   color: var(--text-secondary);
   font-weight: 600;
 }
 
 .body {
-  font-size: 1rem;
+  font-size: calc(1rem + 2px);
 }
 
 .description {
-  font-size: 0.875rem;
+  font-size: calc(0.875rem + 2px);
 }
 
 @media screen and (max-width: 1536px) {
   .headline {
-    font-size: 3.5rem;
+    font-size: calc(3.5rem + 2px);
   }
   .title {
-    font-size: 2.125rem;
+    font-size: calc(2.125rem + 2px);
   }
   .sub-title {
-    font-size: 1.125rem;
+    font-size: calc(1.125rem + 2px);
   }
   .body {
-    font-size: 0.9375rem;
+    font-size: calc(0.9375rem + 2px);
   }
   .description {
-    font-size: 0.8125rem;
+    font-size: calc(0.8125rem + 2px);
   }
 }
 
 @media screen and (max-width: 1280px) {
   .headline {
-    font-size: 3rem;
+    font-size: calc(3rem + 2px);
   }
   .title {
-    font-size: 2rem;
+    font-size: calc(2rem + 2px);
   }
   .sub-title {
-    font-size: 1rem;
+    font-size: calc(1rem + 2px);
   }
   .body {
-    font-size: 0.875rem;
+    font-size: calc(0.875rem + 2px);
   }
   .description {
-    font-size: 0.75rem;
+    font-size: calc(0.75rem + 2px);
   }
 }
 
 @media screen and (max-width: 1024px) {
   .headline {
-    font-size: 2.75rem;
+    font-size: calc(2.75rem + 2px);
   }
   .title {
-    font-size: 1.75rem;
+    font-size: calc(1.75rem + 2px);
   }
   .sub-title {
-    font-size: 0.9375rem;
+    font-size: calc(0.9375rem + 2px);
   }
   .body {
-    font-size: 0.8125rem;
+    font-size: calc(0.8125rem + 2px);
   }
   .description {
-    font-size: 0.6875rem;
+    font-size: calc(0.6875rem + 2px);
   }
 }
 
 @media screen and (max-width: 768px) {
   .headline {
-    font-size: 2.5rem;
+    font-size: calc(2.5rem + 2px);
   }
   .title {
-    font-size: 1.625rem;
+    font-size: calc(1.625rem + 2px);
   }
   .sub-title {
-    font-size: 0.875rem;
+    font-size: calc(0.875rem + 2px);
   }
   .body {
-    font-size: 0.75rem;
+    font-size: calc(0.75rem + 2px);
   }
   .description {
-    font-size: 0.625rem;
+    font-size: calc(0.625rem + 2px);
   }
 }
 
 @media screen and (max-width: 640px) {
   .headline {
-    font-size: 2.25rem;
+    font-size: calc(2.25rem + 2px);
   }
   .title {
-    font-size: 1.5rem;
+    font-size: calc(1.5rem + 2px);
   }
   .sub-title {
-    font-size: 0.75rem;
+    font-size: calc(0.75rem + 2px);
   }
   .body {
-    font-size: 0.6875rem;
+    font-size: calc(0.6875rem + 2px);
   }
   .description {
-    font-size: 0.5625rem;
+    font-size: calc(0.5625rem + 2px);
   }
 }
 
 @media screen and (max-width: 414px) {
   .headline {
-    font-size: 2rem;
+    font-size: calc(2rem + 2px);
   }
   .title {
-    font-size: 1.25rem;
+    font-size: calc(1.25rem + 2px);
   }
   .sub-title {
-    font-size: 0.6875rem;
+    font-size: calc(0.6875rem + 2px);
   }
   .body {
-    font-size: 0.75rem;
+    font-size: calc(0.625rem + 2px);
   }
   .description {
-    font-size: 0.5rem;
+    font-size: calc(0.5rem + 2px);
   }
 }
 
