@@ -343,6 +343,7 @@ main > section {
 }
 .team-info > * {
   color: var(--text-white);
+  text-align: center;
 }
 .team-info h3 {
   color: var(--text-white);
