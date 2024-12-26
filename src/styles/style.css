@@ -162,7 +162,11 @@ footer {
   height: 100vh;
   background-color: var(--coffee-dark-alpha);
   z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
 .container-mobile-nav > ul {
   display: flex;
   flex-direction: column;
@@ -571,6 +575,9 @@ footer h3 {
   background-color: var(--coffee-medium-alpha);
   z-index: 3;
   padding: 1rem 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .inner-modal-product {

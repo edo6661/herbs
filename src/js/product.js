@@ -21,9 +21,12 @@ export function closeModal() {
   const modal = document.querySelector(".modal-container");
   const innerModal = modal.querySelector(".inner-modal-product");
   innerModal.scrollTop = 0;
-  modal.classList.add("hidden");
   modal.classList.remove("active");
   document.body.classList.remove("overflow-hidden");
+
+  setTimeout(() => {
+    modal.classList.add("hidden");
+  }, 300);
 }
 
 export function initProductModal() {

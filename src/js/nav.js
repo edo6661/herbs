@@ -26,9 +26,18 @@ function toggleMobileNav() {
   const mobileNavContainer = document.querySelector(".container-mobile-nav");
   const body = document.querySelector("body");
 
-  mobileNavContainer.classList.toggle("active");
-  mobileNavContainer.classList.toggle("hidden");
-  body.classList.toggle("overflow-hidden");
+  if (mobileNavContainer.classList.contains("hidden")) {
+    mobileNavContainer.classList.remove("hidden");
+    mobileNavContainer.classList.add("active");
+    body.classList.add("overflow-hidden");
+  } else {
+    mobileNavContainer.classList.remove("active");
+    body.classList.remove("overflow-hidden");
+
+    setTimeout(() => {
+      mobileNavContainer.classList.add("hidden");
+    }, 300);
+  }
 }
 
 function handleActiveNav() {
