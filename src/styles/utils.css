@@ -18,7 +18,6 @@
 .text-golden {
   color: var(--text-golden);
 }
-
 /* font */
 .headline {
   font-size: calc(4rem + 2px);
@@ -136,7 +135,7 @@
 
 @media screen and (max-width: 414px) {
   .headline {
-    font-size: calc(1rem);
+    font-size: calc(2rem + 2px);
   }
   .title {
     font-size: calc(1.25rem + 2px);
