@@ -110,9 +110,6 @@
   color: var(--text-golden);
 }
 
-.container-logo > img {
-}
-
 header {
   position: fixed;
   display: flex;
@@ -204,11 +201,7 @@ main > section {
   /* min-height: 100vh; */
   padding-block: 2rem;
 }
-@media screen and (max-width: 640px) {
-  main > section {
-    /* min-height: auto; */
-  }
-}
+
 /* wrapper in main */
 .container-right-advantage {
   display: flex;
