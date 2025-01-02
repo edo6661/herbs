@@ -66,6 +66,11 @@
   --nav-background: var(--coffee-dark);
   --card-background: var(--coffee-cream);
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 /* header and hero  */
 .header-hero-wrapper {
   min-height: 90vh;
@@ -262,7 +267,7 @@ main > section {
   flex-direction: column;
   gap: 0.5rem;
 }
-.container-bottom-about {
+.container-bottom-product {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -271,7 +276,7 @@ main > section {
   padding-top: 1rem;
 }
 @media screen and (max-width: 768px) {
-  .container-bottom-about {
+  .container-bottom-product {
     grid-column: 1;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -280,32 +285,32 @@ main > section {
   }
 }
 @media screen and (max-width: 414px) {
-  .container-bottom-about {
+  .container-bottom-product {
     grid-template-columns: 1fr;
   }
 }
 
-.bottom-about-item {
+.bottom-product-item {
   position: relative;
   height: fit-content;
   cursor: pointer;
 }
-.bottom-about-item:hover > img {
+.bottom-product-item:hover > img {
   transform: scale(1);
   border-radius: 0.5rem;
 }
-.bottom-about-item:hover > p {
+.bottom-product-item:hover > p {
   transform: scale(1);
   background-color: var(--coffee-medium-alpha);
 }
-.bottom-about-item > img {
+.bottom-product-item > img {
   object-fit: contain;
   transform: scale(0.95);
   transition: transform 0.3s ease, border-radius 0.3s ease;
   border-radius: 1rem;
   aspect-ratio: 1/1;
 }
-.bottom-about-item > p {
+.bottom-product-item > p {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -619,9 +624,10 @@ footer h3 {
 }
 .container-image-product > img {
   object-fit: contain;
-  height: 400px;
   border-radius: 0.5rem;
+  max-height: 400px;
   margin-inline: auto;
+  width: fit-content;
 }
 .inner-modal-product > button {
   position: absolute;
@@ -630,7 +636,6 @@ footer h3 {
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
   cursor: pointer;
-  padding: 1rem;
   transition: background-color 0.3s ease, border-radius 0.3s ease;
   border-radius: 0.3rem;
 }
@@ -640,6 +645,49 @@ footer h3 {
 }
 
 .inner-modal-product > button > i {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--text-secondary);
+  padding: 1rem;
+}
+.container-table-product > div:first-child,
+.container-table-product-packing > div:first-child {
+  margin-bottom: 1rem;
+}
+.container-table-product > div:not(:first-child),
+.container-table-product-packing > div:not(:first-child) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.container-table-product > div:nth-child(2),
+.container-table-product-packing > div:nth-child(2) {
+  border-top: 1px solid var(--border-primary);
+}
+
+.container-table-product > .double-column > div:first-child,
+.container-table-product-packing > .double-column > div:first-child {
+  grid-column: span 2;
+  border-bottom: 1px solid var(--border-primary);
+  text-align: center;
+}
+.container-table-product > .double-column > div:nth-child(2),
+.container-table-product-packing > .double-column > div:nth-child(2) {
+  border-left: 1px solid var(--border-primary);
+  border-right: 1px solid var(--border-primary);
+}
+
+.container-table-product > div:not(:first-child) > div:first-child,
+.container-table-product-packing > div:not(:first-child) > div:first-child {
+  border-right: 1px solid var(--border-primary);
+  border-left: 1px solid var(--border-primary);
+}
+.container-table-product > div:not(:first-child) > div:last-child,
+.container-table-product-packing > div:not(:first-child) > div:last-child {
+  border-right: 1px solid var(--border-primary);
+}
+
+.container-table-product > div > div,
+.container-table-product-packing > div > div {
+  padding: 1rem;
 }
