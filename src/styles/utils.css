@@ -139,7 +139,7 @@
     font-size: calc(1rem);
   }
   .title {
-    font-size: calc(1rem);
+    font-size: calc(1.25rem + 2px);
   }
   .sub-title {
     font-size: calc(0.6875rem + 2px);
