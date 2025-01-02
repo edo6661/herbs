@@ -5,10 +5,12 @@ export function openModal(item) {
   const modalDescription = modal.querySelector("p");
 
   const imgSrc = item.dataset.image;
+  const imgAlt = item.dataset.title;
   const title = item.dataset.title;
   const description = item.dataset.description;
 
   modalImage.src = imgSrc;
+  modalImage.alt = imgAlt;
   modalTitle.textContent = title;
   modalDescription.textContent = description;
 
