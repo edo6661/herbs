@@ -67,10 +67,6 @@
   --card-background: var(--coffee-cream);
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 /* header and hero  */
 .header-hero-wrapper {
   min-height: 90vh;
