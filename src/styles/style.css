@@ -70,7 +70,7 @@
 /* keyboard */
 .skip-link {
   position: absolute;
-  top: -40px;
+  top: -120px;
   left: 0;
   background: var(--bg-golden);
   color: white;
