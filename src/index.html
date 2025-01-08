@@ -131,13 +131,19 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "PT. Reoncy Indo Abadi",
+        "description": "PT. REONCY INDO ABADI adalah perusahaan trading internasional terkemuka yang menawarkan komoditas pertanian berkualitas tinggi dari Indonesia, termasuk rempah-rempah, kopi, dan produk herbal.",
         "url": "https://herbs-self.vercel.app/",
         "logo": "https://herbs-self.vercel.app/assets/images/logo-edited.webp",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+6285940338187",
-          "contactType": "Customer Service"
-        },
+        "image": ["https://herbs-self.vercel.app/assets/images/hero.webp"],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+6285940338187",
+            "contactType": "customer service",
+            "areaServed": ["ID", "worldwide"],
+            "availableLanguage": ["id", "en"]
+          }
+        ],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Jl. Contoh No.123",
@@ -146,6 +152,37 @@
           "postalCode": "12345",
           "addressCountry": "ID"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "-6.xxx",
+          "longitude": "106.xxx"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
+        "priceRange": "$$",
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "-6.xxx",
+            "longitude": "106.xxx"
+          },
+          "geoRadius": "50000"
+        },
+        "foundingDate": "YYYY",
+        "keywords": "spices, exporter, indonesia, cloves, nutmeg, coffee beans, ginger, cinnamon, cocoa beans, herbs, rempah-rempah, ekspor rempah",
         "sameAs": [
           "https://facebook.com/your-page",
           "https://twitter.com/your-page",
