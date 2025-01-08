@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
     <meta
       name="google-site-verification"
       content="gq1aAEt6wUe5tEkqmfl62fA1ZTvKi38PU2sb1EnK3lw"
@@ -216,6 +219,9 @@
   </head>
 
   <body class="poppins-regular body">
+    <!-- keyboard  -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- modal -->
     <div class="modal-container hidden">
       <div class="inner-modal-product space-y-6">
@@ -355,7 +361,7 @@
             height="48"
           />
         </a>
-        <nav>
+        <nav arial-label="Main navigation">
           <ul class="container-nav">
             <li><a class="sub-title" href="#about">About</a></li>
             <li><a class="sub-title" href="#product">Product</a></li>
@@ -368,7 +374,10 @@
             <i class="fa-solid fa-bars title"></i>
           </button>
         </nav>
-        <div class="container container-mobile-nav hidden">
+        <nav
+          class="container container-mobile-nav hidden"
+          aria-label="Mobile navigation"
+        >
           <ul>
             <li>
               <button class="toggle-nav-btn" aria-label="Toggle Navigation">
@@ -382,7 +391,7 @@
             <li><a class="title" href="#map">Map</a></li>
             <li><a class="title" href="#contact">Contact</a></li>
           </ul>
-        </div>
+        </nav>
       </header>
       <section id="hero" class="hero-container">
         <span class="sub-title">Spices Exporter from Indonesia</span>
@@ -401,7 +410,7 @@
     </div>
 
     <!-- main -->
-    <main>
+    <main id="main-content">
       <section id="about" class="wrapper-about container">
         <div class="container-left-about inner-about">
           <span class="sub-title">About Company </span>
@@ -454,71 +463,145 @@
           </a>
         </div>
         <div class="container-bottom-product">
-          <div class="bottom-product-item" data-id="cloves">
+          <article class="bottom-product-item" data-id="cloves">
             <img
               loading="lazy"
-              src="assets/images/products/cloves-2.webp"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="assets/images/products/cloves-2.webp"
               alt="Cloves"
               width="100%"
               height="auto"
+              class="lazy"
             />
+            <noscript>
+              <img
+                src="assets/images/products/cloves-2.webp"
+                alt="Cloves"
+                width="100%"
+                height="auto"
+              />
+            </noscript>
+
             <p>Cloves</p>
-          </div>
-          <div class="bottom-product-item" data-title="Nutmeg" data-id="nutmeg">
+          </article>
+          <article
+            class="bottom-product-item"
+            data-title="Nutmeg"
+            data-id="nutmeg"
+          >
             <img
               loading="lazy"
-              src="assets/images/products/nutmeg-2.webp"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="assets/images/products/nutmeg-2.webp"
               alt="Nutmeg"
               width="100%"
               height="auto"
+              class="lazy"
             />
+            <noscript>
+              <img
+                src="assets/images/products/nutmeg-2.webp"
+                alt="Nutmeg"
+                width="100%"
+                height="auto"
+              />
+            </noscript>
+
             <p>Nutmeg</p>
-          </div>
+          </article>
 
           <div
+            article
             class="bottom-product-item"
             data-title="Coffe Bean"
             data-id="coffeeBean"
           >
             <img
               loading="lazy"
-              src="assets/images/products/coffe-beans.webp"
-              alt="Coffe Bean"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="assets/images/products/coffe-beans.webp"
+              alt="Coffe Beans"
               width="100%"
               height="auto"
+              class="lazy"
             />
+            <noscript>
+              <img
+                src="assets/images/products/coffe-beans.webp"
+                alt="Coffe Beans"
+                width="100%"
+                height="auto"
+              />
+            </noscript>
+
             <p>Coffe Bean</p>
           </div>
-          <div class="bottom-product-item" data-title="Ginger" data-id="ginger">
+          <article
+            class="bottom-product-item"
+            data-title="Ginger"
+            data-id="ginger"
+          >
             <img
               loading="lazy"
-              src="assets/images/products/ginger.webp"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="assets/images/products/ginger.webp"
               alt="Ginger"
               width="100%"
               height="auto"
+              class="lazy"
             />
+            <noscript>
+              <img
+                src="assets/images/products/ginger.webp"
+                alt="Ginger"
+                width="100%"
+                height="auto"
+              />
+            </noscript>
+
             <p>Ginger</p>
-          </div>
-          <div class="bottom-product-item" data-id="cinnamon">
+          </article>
+          <article class="bottom-product-item" data-id="cinnamon">
             <img
               loading="lazy"
-              src="assets/images/products/cinamon.webp"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="assets/images/products/cinamon.webp"
               alt="Cinamon"
               width="100%"
               height="auto"
+              class="lazy"
             />
+            <noscript>
+              <img
+                src="assets/images/products/cinamon.webp"
+                alt="Cinamon"
+                width="100%"
+                height="auto"
+              />
+            </noscript>
+
             <p>Cinnamon</p>
-          </div>
-          <div class="bottom-product-item" data-id="chillin">
+          </article>
+          <article class="bottom-product-item" data-id="chillin">
             <img
               loading="lazy"
-              src="assets/images/chill.webp"
-              alt="Item"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="assets/images/chill.webp"
+              alt="Chillin"
               width="100%"
               height="auto"
+              class="lazy"
             />
+            <noscript>
+              <img
+                src="assets/images/chill.webp"
+                alt="Chillin"
+                width="100%"
+                height="auto"
+              />
+            </noscript>
             <p>Chillin</p>
-          </div>
+          </article>
         </div>
       </section>
       <section id="advantage" class="wrapper-advantage container">
@@ -712,6 +795,7 @@
                 name="Name"
                 placeholder="Enter your name"
                 required
+                autocomplete="name"
               />
             </div>
 
@@ -722,6 +806,7 @@
                 id="email"
                 name="Email"
                 placeholder="Enter your email"
+                autocomplete="email"
                 required
               />
             </div>

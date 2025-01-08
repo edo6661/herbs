@@ -67,6 +67,32 @@
   --card-background: var(--coffee-cream);
 }
 
+/* keyboard */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--bg-golden);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* interaction */
+.lazy {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lazy.loaded {
+  opacity: 1;
+}
+
 /* header and hero  */
 .header-hero-wrapper {
   min-height: 90vh;
