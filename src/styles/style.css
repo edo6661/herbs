@@ -63,7 +63,7 @@
   /* Penggunaan untuk Komponen */
   --button-primary: var(--coffee-golden);
   --button-hover: var(--coffee-medium);
-  --nav-background: var(--coffee-dark);
+  --nav-background: var(--bg-light);
   --card-background: var(--coffee-cream);
 }
 
@@ -100,14 +100,14 @@
   overflow-x: hidden;
 }
 .hero-image {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
   will-change: transform;
   transform: translateZ(0);
 }
@@ -128,11 +128,11 @@
 }
 .container-nav > li > a:hover,
 .container-mobile-nav > ul > li > a:hover {
-  color: var(--text-golden);
+  color: var(--text-primary);
 }
 .container-nav > li > a.active,
 .container-mobile-nav > ul > li > a.active {
-  color: var(--text-golden);
+  color: var(--text-primary);
 }
 
 header {
@@ -248,13 +248,16 @@ main > section {
 .wrapper-about,
 .wrapper-advantage,
 .wrapper-map,
-.wrapper-contact {
+.wrapper-contact,
+.wrapper-team,
+.wrapper-product {
   background-color: var(--bg-primary);
 }
+/* 
 .wrapper-product,
 .wrapper-team {
-  background-color: var(--bg-secondary);
-}
+  background-color: var(--);
+} */
 @media screen and (max-width: 768px) {
   .wrapper-about,
   .wrapper-product,
