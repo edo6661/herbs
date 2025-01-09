@@ -97,7 +97,7 @@
 .header-hero-wrapper {
   min-height: 90vh;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .hero-image {
   position: absolute;
