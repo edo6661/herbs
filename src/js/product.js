@@ -138,7 +138,7 @@ function createDynamicSection(wrapper, section) {
       containerDiv.classList.add("double-column");
 
       const keyDiv = document.createElement("div");
-      keyDiv.innerHTML = `<h3 class="sub-title">${key}</h3>`;
+      keyDiv.innerHTML = `<h3 class="body">${key}</h3>`;
       containerDiv.appendChild(keyDiv);
 
       value.forEach((val) => {
@@ -148,10 +148,10 @@ function createDynamicSection(wrapper, section) {
       });
     } else {
       const keyDiv = document.createElement("div");
-      keyDiv.innerHTML = `<h3 class="sub-title">${key}</h3>`;
+      keyDiv.innerHTML = `<h3 class="body">${key}</h3>`;
 
       const valueDiv = document.createElement("div");
-      valueDiv.innerHTML = `<p>${value}</p>`;
+      valueDiv.innerHTML = `<p class="description">${value}</p>`;
 
       containerDiv.appendChild(keyDiv);
       containerDiv.appendChild(valueDiv);
