@@ -1,11 +1,9 @@
-import { interactionObserverInit } from "./interactionObserver.js";
-import { addLoggingUtils, loggingMonitoringInit } from "./logging.js";
+import { loggingMonitoringInit } from "./logging.js";
 import { initNav } from "./nav.js";
 import { initProductModal } from "./product.js";
 
 initNav();
 initProductModal();
-interactionObserverInit();
 loggingMonitoringInit();
 
 // ! TESTING, SOON TO BE REMOVED

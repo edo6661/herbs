@@ -42,7 +42,7 @@ function toggleMobileNav() {
 
 function handleActiveNav() {
   const sections = document.querySelectorAll(
-    "#about, #product, #advantage, #team, #map, #contact"
+    "#about, #product, #galery, #advantage, #team, #map, #contact"
   );
   const navLinks = document.querySelectorAll(
     ".container-nav a[href^='#'], .container-mobile-nav a[href^='#']"
