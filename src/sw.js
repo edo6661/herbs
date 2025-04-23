@@ -3,7 +3,6 @@ self.addEventListener("install", (event) => {
     caches.open("v1").then((cache) => {
       return cache.addAll([
         "./",
-        "./styles/style.css",
         "./js/main.js",
         "./assets/images/logo-edited.webp",
       ]);
