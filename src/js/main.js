@@ -20,15 +20,3 @@ window.addEventListener("load", () => {
     document.getElementById("email").value = recipientEmail;
   }
 });
-
-async function registerSW() {
-  try {
-    await navigator.serviceWorker.register("./sw.js");
-  } catch (error) {
-    console.log("ServiceWorker registration failed:", error);
-  }
-}
-
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", registerSW);
-}

@@ -1,6 +1,6 @@
 const products = {
-  moldedPalmSugar: {
-    title: "Molded Palm Sugar",
+  cylinderPalmSugar: {
+    title: "Cylinder Palm Sugar",
     description:
       "Gula aren padat tradisional Indonesia yang dibentuk melalui proses pengeringan dan pencetakan. Memiliki tekstur padat dan rasa manis karamel yang khas, cocok untuk berbagai hidangan tradisional dan modern. Gula aren padat ini diproses secara alami dari nira pohon aren pilihan, menghasilkan rasa yang autentik dan kaya akan nutrisi.",
     dataImage: "assets/images/products/molded-palm-sugar.png",
@@ -8,7 +8,7 @@ const products = {
       Specification: {
         title: "Specification",
         data: {
-          Nama: "Molded Palm Sugar",
+          Nama: "Cylinder Palm Sugar",
           Style: "Solid",
           Flavour: "Sweet with caramel notes",
           Weight: "250g - 1kg",
