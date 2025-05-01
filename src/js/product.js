@@ -40,12 +40,12 @@ const products = {
       Specification: {
         title: "Specification",
         data: {
-          Nama: "Liquid Palm Sugar",
+          Nama: "Liquid Palm Sugar/Syrup",
           Style: "Liquid",
-          Flavour: "Rich and sweet with distinct aroma",
-          Weight: "250ml - 1L",
-          Color: "Golden brown",
-          "Place of Origin": "Indonesia",
+          Flavour: "Sweet With Subtle Caramel",
+          Weight: "18L/JerryCan",
+          Color: "Dark Brown",
+          "Place of Origin": "Tangerang, Banten, Indonesia",
           "Supply Ability": "300 tons/month",
         },
       },

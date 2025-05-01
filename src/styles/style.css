@@ -310,9 +310,6 @@ main > section {
     grid-column: 1;
     grid-template-columns: repeat(2, 1fr);
   }
-  .container-left-product {
-    text-align: center;
-  }
 }
 @media screen and (max-width: 414px) {
   .container-bottom-product {
@@ -395,8 +392,6 @@ main > section {
 .team-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .team-info {
   padding-inline: 0.5rem;
@@ -410,7 +405,6 @@ main > section {
 }
 
 .container-top-team > * {
-  text-align: center;
 }
 .container-top-team > p {
   max-width: 720px;
@@ -539,7 +533,6 @@ main > section {
   }
 
   .container-left-contact {
-    text-align: center;
   }
 }
 
