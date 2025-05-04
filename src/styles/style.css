@@ -415,11 +415,21 @@ main > section {
   color: var(--text-white);
 }
 
+.team-info h3, .team-info p,
+.container-team-social-media > a > i
+{
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), 
+               -1px -1px 3px rgba(0, 0, 0, 0.8),
+               1px -1px 3px rgba(0, 0, 0, 0.8),
+               -1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
 .container-top-team > * {
 }
 .container-top-team > p {
   max-width: 720px;
 }
+
 .container-bottom-team {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -610,16 +620,15 @@ footer h3 {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  transition: background-color 0.3s ease;
-  border: 1px solid var(--border-primary);
+  /* transition: background-color 0.3s ease; */
   background-color: var(--bg-primary);
 }
-.item-social-media:hover > a {
-  background-color: var(--bg-golden);
-}
-.item-social-media:hover > a > i {
+/* .item-social-media:hover > a {
+  background-color: var(--bg-secondary);
+} */
+/* .item-social-media:hover > a > i {
   color: var(--text-white);
-}
+} */
 .item-social-media > a > i {
   font-size: 24px;
   color: var(--text-primary);

@@ -2,83 +2,101 @@ const products = {
   cylinderPalmSugar: {
     title: "Cylinder Palm Sugar",
     description:
-      "Gula aren padat tradisional Indonesia yang dibentuk melalui proses pengeringan dan pencetakan. Memiliki tekstur padat dan rasa manis karamel yang khas, cocok untuk berbagai hidangan tradisional dan modern. Gula aren padat ini diproses secara alami dari nira pohon aren pilihan, menghasilkan rasa yang autentik dan kaya akan nutrisi.",
+      "Traditional Indonesian solid palm sugar formed through a drying and molding process. It has a dense texture and a distinct caramel-like sweetness, making it ideal for both traditional and modern dishes. This solid palm sugar is naturally processed from selected sap of Arenga palm trees, delivering an authentic taste and rich nutritional value.",
+
     dataImage: "assets/images/products/molded-palm-sugar.png",
     details: {
       Specification: {
         title: "Specification",
         data: {
-          Nama: "Cylinder Palm Sugar",
-          Style: "Solid",
-          Flavour: "Sweet with subtle caramel",
+          "Storage Type": "Dry",
+          Specification: "Palm Sugar / Aren Sugar",
+          "Type Of Product": "Sugar",
+          Shape: "Cylinder / Cube",
+          Color: "Dark Brown",
+          Purity: "100%",
           Weight: "0,75 g",
-          Color: "Dark brown",
-          "Place of Origin": "Bandung, Sukabumi, West Java",
-          Size: "Various shapes",
-          "Supply Ability": "500 tons/month",
+          Flavor: "Sweet with subtle caramel",
+          "Sugar Class": "Premium",
+          Expired: "12 Months",
+          Origin: "Bandung, Sukabumi, West Java",
+          Location: "Indonesia",
+          Packing: "Based on request",
         },
       },
-      Packing: {
-        title: "Packing",
-        data: {
-          "Detail Pengemasan": "Kemasan vakum / Kotak karton",
-          "Kemasan Kustom": "Sesuai persyaratan klien",
-          "Pengemasan (Untuk 40 'rh)": [
-            "Sesuai persyaratan klien",
-            "Berdasarkan permintaan",
-          ],
-        },
-      },
+      // Packing: {
+      //   title: "Packing",
+      //   data: {
+      //     "Detail Pengemasan": "Kemasan vakum / Kotak karton",
+      //     "Kemasan Kustom": "Sesuai persyaratan klien",
+      //     "Pengemasan (Untuk 40 'rh)": [
+      //       "Sesuai persyaratan klien",
+      //       "Berdasarkan permintaan",
+      //     ],
+      //   },
+      // },
     },
   },
   liquidPalmSugar: {
     title: "Liquid Palm Sugar",
     description:
-      "Gula aren cair premium yang diolah melalui proses ekstraksi dan penyaringan tanpa bahan pengawet. Memiliki konsistensi sirup kental dengan rasa manis alami dan aroma khas aren. Sangat cocok untuk pemanis minuman, topping dessert, atau bahan dasar untuk berbagai jenis kue dan makanan. Diproduksi dari nira pohon aren berkualitas tinggi dengan teknologi modern untuk menjaga keaslian rasa.",
+      "Premium liquid palm sugar made through a careful extraction and filtration process, free from preservatives. It has a thick syrup-like consistency with a natural sweetness and a distinctive palm aroma. Perfect as a sweetener for beverages, dessert toppings, or a base ingredient in various cakes and culinary dishes. Produced from high-quality Arenga palm sap using modern technology to preserve its authentic flavor.",
+
     dataImage: "assets/images/products/liquid.png",
     details: {
       Specification: {
         title: "Specification",
         data: {
-          Nama: "Liquid Palm Sugar/Syrup",
-          Style: "Liquid",
-          Flavour: "Sweet With Subtle Caramel",
-          Weight: "18L/JerryCan",
+          Specification: "Palm Sugar Liquid / Syrup",
+          "Type Of Product": "Sugar",
+          Shape: "Liquid / Syrup",
           Color: "Dark Brown",
-          "Place of Origin": "Tangerang, Banten, Indonesia",
-          "Supply Ability": "300 tons/month",
+          Purity: "100%",
+          Weight: "18L",
+          Flavor: "Sweet with subtle caramel",
+          "Sugar Class": "Premium",
+          Expired: "12 Months",
+          Origin: "Bandung, Sukabumi, West Java",
+          Location: "Tangerang, Banten, Indonesia",
+          Packing: "Based on request",
         },
       },
-      Packing: {
-        title: "Packing",
-        data: {
-          "Detail Pengemasan": "Botol kaca / Botol plastik food grade",
-          "Kemasan Kustom": "Sesuai persyaratan klien",
-          "Pengemasan (Untuk 40 'rh)": [
-            "Sesuai persyaratan klien",
-            "Berdasarkan permintaan",
-          ],
-        },
-      },
+      // Packing: {
+      //   title: "Packing",
+      //   data: {
+      //     "Detail Pengemasan": "Botol kaca / Botol plastik food grade",
+      //     "Kemasan Kustom": "Sesuai persyaratan klien",
+      //     "Pengemasan (Untuk 40 'rh)": [
+      //       "Sesuai persyaratan klien",
+      //       "Berdasarkan permintaan",
+      //     ],
+      //   },
+      // },
     },
   },
   powderPalmSugar: {
     title: "Powder Palm Sugar",
     description:
-      "Gula aren bubuk yang diproduksi melalui proses pengolahan modern dengan mempertahankan cita rasa tradisional. Tekstur halus dan mudah larut menjadikannya pilihan praktis untuk berbagai kebutuhan memasak dan membuat minuman. Gula aren bubuk ini memiliki indeks glikemik yang lebih rendah dibandingkan gula pasir biasa, sehingga menjadi alternatif pemanis yang lebih sehat dengan tetap menyajikan rasa manis yang kaya.",
+      "Finely ground palm sugar produced using modern techniques while preserving traditional flavors. Its smooth texture and easy solubility make it a practical choice for cooking and beverage preparation. With a lower glycemic index than refined sugar, this powdered palm sugar offers a healthier sweetener alternative without compromising on rich taste.",
+    dataImage: "assets/images/products/powder-palm-sugar.png",
     dataImage: "assets/images/products/powder-palm-sugar.png",
     details: {
       Specification: {
         title: "Specification",
         data: {
-          Nama: "Powder Palm Sugar",
-          Style: "Powdered",
-          Flavour: "Sweet with subtle caramel",
-          Weight: "100g - 500g",
+          "Storage Type": "Dry",
+          Specification: "Palm Sugar",
+          "Type Of Product": "Sugar",
+          Shape: "Powder",
           Color: "Brown",
-          "Place of Origin": "Bandung, Sukabumi, West Java",
-          "Granule Size": "Fine",
-          "Supply Ability": "400 tons/month",
+          Purity: "100%",
+          Humidity: "2% Max",
+          Flavor: "Sweet with subtle caramel",
+          "Sugar Class": "Premium",
+          Expired: "2 Years of Manufacture",
+          Origin: "Bandung, Sukabumi, West Java",
+          Location: "Tangerang, Banten, Indonesia",
+          Packing: "Based on request",
         },
       },
       Packing: {
