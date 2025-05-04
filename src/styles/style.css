@@ -322,14 +322,25 @@ main > section {
   height: fit-content;
   cursor: pointer;
 }
-.bottom-product-item:hover > img {
+.bottom-product-item:hover >.container-image-product > img {
   transform: scale(1);
   border-radius: 0.5rem;
 }
+.container-image-product {
+  position: relative;
+}
+.container-image-product > i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  color: black;
+}
+.container-image-product > 
 .bottom-product-item:hover > p {
   transform: scale(1);
 }
-.bottom-product-item > img {
+.bottom-product-item > .container-image-product > img {
   object-fit: contain;
   transform: scale(0.95);
   transition: transform 0.3s ease, border-radius 0.3s ease;

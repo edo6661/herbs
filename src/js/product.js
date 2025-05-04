@@ -10,10 +10,10 @@ const products = {
         data: {
           Nama: "Cylinder Palm Sugar",
           Style: "Solid",
-          Flavour: "Sweet with caramel notes",
-          Weight: "250g - 1kg",
+          Flavour: "Sweet with subtle caramel",
+          Weight: "0,75 g",
           Color: "Dark brown",
-          "Place of Origin": "Indonesia",
+          "Place of Origin": "Bandung, Sukabumi, West Java",
           Size: "Various shapes",
           "Supply Ability": "500 tons/month",
         },
@@ -35,7 +35,7 @@ const products = {
     title: "Liquid Palm Sugar",
     description:
       "Gula aren cair premium yang diolah melalui proses ekstraksi dan penyaringan tanpa bahan pengawet. Memiliki konsistensi sirup kental dengan rasa manis alami dan aroma khas aren. Sangat cocok untuk pemanis minuman, topping dessert, atau bahan dasar untuk berbagai jenis kue dan makanan. Diproduksi dari nira pohon aren berkualitas tinggi dengan teknologi modern untuk menjaga keaslian rasa.",
-    dataImage: "assets/images/products/liquid-palm-sugar.png",
+    dataImage: "assets/images/products/liquid.png",
     details: {
       Specification: {
         title: "Specification",
@@ -73,10 +73,10 @@ const products = {
         data: {
           Nama: "Powder Palm Sugar",
           Style: "Powdered",
-          Flavour: "Sweet with subtle caramel notes",
+          Flavour: "Sweet with subtle caramel",
           Weight: "100g - 500g",
-          Color: "Light to medium brown",
-          "Place of Origin": "Indonesia",
+          Color: "Brown",
+          "Place of Origin": "Bandung, Sukabumi, West Java",
           "Granule Size": "Fine",
           "Supply Ability": "400 tons/month",
         },
