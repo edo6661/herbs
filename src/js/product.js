@@ -24,17 +24,7 @@ const products = {
           Packing: "Based on request",
         },
       },
-      // Packing: {
-      //   title: "Packing",
-      //   data: {
-      //     "Detail Pengemasan": "Kemasan vakum / Kotak karton",
-      //     "Kemasan Kustom": "Sesuai persyaratan klien",
-      //     "Pengemasan (Untuk 40 'rh)": [
-      //       "Sesuai persyaratan klien",
-      //       "Berdasarkan permintaan",
-      //     ],
-      //   },
-      // },
+   
     },
   },
   liquidPalmSugar: {
@@ -61,17 +51,7 @@ const products = {
           Packing: "Based on request",
         },
       },
-      // Packing: {
-      //   title: "Packing",
-      //   data: {
-      //     "Detail Pengemasan": "Botol kaca / Botol plastik food grade",
-      //     "Kemasan Kustom": "Sesuai persyaratan klien",
-      //     "Pengemasan (Untuk 40 'rh)": [
-      //       "Sesuai persyaratan klien",
-      //       "Berdasarkan permintaan",
-      //     ],
-      //   },
-      // },
+      
     },
   },
   powderPalmSugar: {
@@ -99,17 +79,7 @@ const products = {
           Packing: "Based on request",
         },
       },
-      Packing: {
-        title: "Packing",
-        data: {
-          "Detail Pengemasan": "Kemasan aluminium foil / Kemasan pouch",
-          "Kemasan Kustom": "Sesuai persyaratan klien",
-          "Pengemasan (Untuk 40 'rh)": [
-            "Sesuai persyaratan klien",
-            "Berdasarkan permintaan",
-          ],
-        },
-      },
+     
     },
   },
 };
