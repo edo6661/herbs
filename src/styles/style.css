@@ -410,6 +410,7 @@ main > section {
 .team-info > * {
   color: var(--text-white);
   text-align: center;
+  margin: 0 auto;
 }
 .team-info h3 {
   color: var(--text-white);
@@ -461,7 +462,10 @@ main > section {
 .team-item-content {
   position: absolute;
   bottom: 42px;
+  left: 50%;
   transition: bottom 0.3s ease;
+  translate: -50%;
+  width: 100%;
 }
 .container-team-social-media > a {
   display: flex;
