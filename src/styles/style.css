@@ -626,6 +626,7 @@ footer h3 {
   border-radius: 50%;
   /* transition: background-color 0.3s ease; */
   background-color: var(--bg-primary);
+  cursor: pointer;
 }
 /* .item-social-media:hover > a {
   background-color: var(--bg-secondary);
