@@ -19,12 +19,11 @@ const products = {
           Flavor: "Sweet with subtle caramel",
           "Sugar Class": "Premium",
           Expired: "12 Months",
-          Origin: "Bandung, Sukabumi, West Java",
+          Origin: "Tangerang, Banten",
           Location: "Indonesia",
           Packing: "Based on request",
         },
       },
-   
     },
   },
   liquidPalmSugar: {
@@ -46,20 +45,18 @@ const products = {
           Flavor: "Sweet with subtle caramel",
           "Sugar Class": "Premium",
           Expired: "12 Months",
-          Origin: "Bandung, Sukabumi, West Java",
+          Origin: "Tangerang, Banten",
           Location: "Tangerang, Banten, Indonesia",
           Packing: "Based on request",
         },
       },
-      
     },
   },
   powderPalmSugar: {
     title: "Powder Palm Sugar",
     description:
       "Finely ground palm sugar produced using modern techniques while preserving traditional flavors. Its smooth texture and easy solubility make it a practical choice for cooking and beverage preparation. With a lower glycemic index than refined sugar, this powdered palm sugar offers a healthier sweetener alternative without compromising on rich taste.",
-    dataImage: "assets/images/products/powder-palm-sugar.png",
-    dataImage: "assets/images/products/powder-palm-sugar.png",
+    dataImage: "assets/images/products/powder-2.png",
     details: {
       Specification: {
         title: "Specification",
@@ -74,12 +71,61 @@ const products = {
           Flavor: "Sweet with subtle caramel",
           "Sugar Class": "Premium",
           Expired: "2 Years of Manufacture",
-          Origin: "Bandung, Sukabumi, West Java",
+          Origin: "Tangerang, Banten",
           Location: "Tangerang, Banten, Indonesia",
           Packing: "Based on request",
         },
       },
-     
+    },
+  },
+  mouldedSugarCoconut: {
+    title: "Coconut Sugar Moulded",
+    description:
+      "Finely milled coconut sugar made from high-quality coconut sap, offering a smooth texture and easy solubility. With its naturally sweet caramel taste and light brownish-yellow hue, it serves as a healthier alternative to refined sugar. Ideal for baking, beverages, and everyday cooking, delivering a tropical sweetness that blends effortlessly with any recipe.",
+    dataImage: "assets/images/products/moulded-sugar-coconut-2.png",
+    details: {
+      Specification: {
+        title: "Specification",
+        data: {
+          "Storage Type": "Dry",
+          Specification: "Coconut Sugar",
+          "Type Of Product": "Sugar",
+          Color: "Brownish",
+          Taste: "Sweet Savory Caramel",
+          Moister: "<2%",
+          Shape: "Semicircle",
+          Ingredients: "100% Coconut Sugar",
+          Expired: "1 Years of Manufacture",
+          Origin: "Tangerang, Banten",
+          Location: "Tangerang, Banten, Indonesia",
+          Packing: "Based on request",
+        },
+      },
+    },
+  },
+  coconutSugarPowder: {
+    title: "Powder Palm Sugar",
+    description:
+      "Finely ground palm sugar produced using modern techniques while preserving traditional flavors. Its smooth texture and easy solubility make it a practical choice for cooking and beverage preparation. With a lower glycemic index than refined sugar, this powdered palm sugar offers a healthier sweetener alternative without compromising on rich taste.",
+    dataImage: "assets/images/products/powder-sugar-coconut-2.png",
+    details: {
+      Specification: {
+        title: "Specification",
+        data: {
+          "Storage Type": "Dry",
+          Specification: "Coconut Sugar",
+          "Type Of Product": "Sugar",
+          Color: "Brownish Yellow",
+          Taste: "Sweet Caramel",
+          Moister: "<2%",
+          Mash: "10 - 14",
+          Ingredients: "100% Coconut Sugar",
+          Expired: "2 Years of Manufacture",
+          Origin: "Tangerang, Banten",
+          Location: "Tangerang, Banten, Indonesia",
+          Packing: "Based on request",
+        },
+      },
     },
   },
 };

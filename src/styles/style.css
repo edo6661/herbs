@@ -723,6 +723,9 @@ footer h3 {
   color: var(--text-secondary);
   padding: 1rem;
 }
+.close-modal {
+  z-index: 100;
+}
 .container-table-product > div:first-child,
 .container-table-product-packing > div:first-child {
   margin-bottom: 1rem;
